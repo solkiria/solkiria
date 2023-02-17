@@ -1,8 +1,7 @@
 ![image](dnaIT.jpg)
 
 
-### **"The mind is like a parachute... It only works if we have it open."** 🧠 
-*A. Einstein*
+### **"The mind is like a parachute... It only works if we have it open."** 🧠    *A. Einstein*
 
 Just out of curiosity, get to know me!
 
