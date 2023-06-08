@@ -1,17 +1,17 @@
 ![image](dnaIT.jpg)
 
 
-### **"The mind is like a parachute... It only works if we have it open."** 🧠    *A. Einstein*
+### **"Our mind is like a parachute... It only works if we have it open."** 🧠
 
 Just out of curiosity, get to know me!
 
-- 🕵️‍♀️ I'm looking for a job as Data Analyst 👩‍💻
-- 🌱 I'm currently learning about Power BI 📊
+- 🕵️‍♀️ I'm working on my Data Analyst and Data Scientist skills 👩‍💻
+- 🌱 I'm currently learning about Apache Spark 📊
 - 🚀 I'm always looking for a challenge to overcome 🧗‍♀️
 - 🤝 I would love to collaborate on any interesting proyect that comes around 🗺️
 - 👩‍🔬 I used to work in labs environment dealing with science data 🧬
 - 📬 Find me: sonia.ruiz.p31@gmail.com
-- 🗨️ Ask me about Data analyst, Python, SQL, Tableau...
+- 🗨️ Ask me about Data analysis, Python, SQL, data visualization with Tableau or Power BI...
 - 💜✨ I'm passionate about nature, sports (specially climbing, canyoning and rafting) and I love playing video games.
 
 <!--
