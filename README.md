@@ -1,4 +1,4 @@
-![image](dnaIT.jpg)
+![fondo_linkedin2](https://github.com/solkiria/solkiria/assets/116632929/1089adfc-9f47-4b26-9010-51b94121504d)
 
 
 ### **"Our mind is like a parachute... It only works if we have it open."** 🧠
