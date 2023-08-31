@@ -18,7 +18,7 @@ Just out of curiosity, get to know me!
 
 ![Codewars](https://www.codewars.com/users/solkiria/badges/large)
 
-![Codewars](https://github.r2v.ch/codewars?user=solkiria&name=true&top_languages=true&stroke=%23b362ff&theme=purple_dark)
+![Codewars](https://github.r2v.ch/codewars?user=solkiria&hide_clan=true&name=true&top_languages=true&stroke=%23b362ff&theme=purple_dark)
 
 <!--
 **solkiria/solkiria** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
