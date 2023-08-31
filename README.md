@@ -14,6 +14,11 @@ Just out of curiosity, get to know me!
 - 🗨️ Ask me about Data analysis, Python, SQL, data visualization with Tableau or Power BI...
 - 💜✨ I'm passionate about nature, sports (specially climbing, canyoning and rafting) and I love playing video games.
 
+
+
+![Codewars](https://github.r2v.ch/codewars?user=solkiria&stroke=purple)
+
+
 <!--
 **solkiria/solkiria** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
