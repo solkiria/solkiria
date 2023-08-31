@@ -16,7 +16,7 @@ Just out of curiosity, get to know me!
 
 
 
-![Codewars](https://github.r2v.ch/codewars?user=solkiria&stroke=lile)
+![Codewars](https://github.r2v.ch/codewars?user=solkiria&stroke=blue)
 
 
 <!--
