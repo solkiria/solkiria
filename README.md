@@ -12,7 +12,7 @@ Just out of curiosity, get to know me!
 - 👩‍🔬 I used to work in labs environment dealing with science data 🧬
 - 📬 Find me: sonia.ruiz.p31@gmail.com
 - 🗨️ Ask me about Data analysis, Python, SQL, data visualization with Tableau or Power BI...
-- 💜✨ I'm passionate about nature, sports (specially climbing, canyoning and rafting) and I love playing video games.
+- 💜✨ I'm passionate about nature, sports (specially climbing, canyoning and rafting).
 
 
 
