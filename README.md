@@ -16,7 +16,9 @@ Just out of curiosity, get to know me!
 
 FOLLOW ME ON:
 
-[![LinkedIn](https://www.rrhhdigital.com/wp-content/uploads/userfiles/linkedinok.jpg =x20)](https://www.linkedin.com/in/sonia-ruiz-perez/)
+[![LinkedIn](https://www.rrhhdigital.com/wp-content/uploads/userfiles/linkedinok.jpg)](https://www.linkedin.com/in/sonia-ruiz-perez/)
+<img src="[LinkedIn](https://www.rrhhdigital.com/wp-content/uploads/userfiles/linkedinok.jpg)" alt="LinkedIn" width="200"/>
+
 [![Tableau](https://public.tableau.com/app/assets/tableau-public-logo-rgb.07774149.svg)](https://public.tableau.com/app/profile/solkiria)
 
 
