@@ -16,11 +16,10 @@ Just out of curiosity, get to know me!
 
 FOLLOW ME ON:
 
-[![LinkedIn](https://github.com/solkiria/solkiria/assets/116632929/f9bba88b-fac1-43b7-ae36-2c61a5452015)](https://www.linkedin.com/in/sonia-ruiz-perez/)
-
+[![LinkedIn](https://www.linkedin.com/in/sonia-ruiz-perez/)]
 [![Tableau](https://github.com/solkiria/solkiria/assets/116632929/1e521449-f57f-4d34-aefb-2c6f9f9e6c48)](https://public.tableau.com/app/profile/solkiria)
-
 [![ORCiD](https://github.com/solkiria/solkiria/assets/116632929/4436fc5a-7954-4636-aa9b-b4ca35baaa60)](https://orcid.org/0000-0001-9872-0193)
+
 
 
 ![Codewars](https://github.r2v.ch/codewars?user=solkiria&hide_clan=true&top_languages=true&stroke=%23b362ff&theme=gradient_midnight_puple)
