@@ -20,7 +20,7 @@ FOLLOW ME ON:
 
 [![Tableau](https://github.com/solkiria/solkiria/assets/116632929/d75a8dec-ce8a-4cba-9de1-081b99b0a623)](https://public.tableau.com/app/profile/solkiria)
 
-[![ORCiD](https://github.com/solkiria/solkiria/assets/116632929/8417f9af-1bcb-4d45-8a04-fb1ddfd99f89)]([https://public.tableau.com/app/profile/solkiria](https://orcid.org/0000-0001-9872-0193))
+[![ORCiD](https://github.com/solkiria/solkiria/assets/116632929/4436fc5a-7954-4636-aa9b-b4ca35baaa60)]([https://public.tableau.com/app/profile/solkiria](https://orcid.org/0000-0001-9872-0193))
 
 
 ![Codewars](https://github.r2v.ch/codewars?user=solkiria&hide_clan=true&top_languages=true&stroke=%23b362ff&theme=gradient_midnight_puple)
