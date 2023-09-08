@@ -14,7 +14,7 @@ Just out of curiosity, get to know me!
 - 🗨️ Ask me about Data analysis, Python, SQL, data visualization with Tableau or Power BI...
 - 💜✨ I'm passionate about nature, sports (specially climbing, canyoning and rafting).
 
-
+[![Tableau](https://public.tableau.com/app/assets/tableau-public-logo-rgb.07774149.svg)](https://public.tableau.com/app/profile/solkiria)
 
 
 ![Codewars](https://github.r2v.ch/codewars?user=solkiria&hide_clan=true&top_languages=true&stroke=%23b362ff&theme=gradient_midnight_puple)
