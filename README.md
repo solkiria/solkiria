@@ -16,10 +16,9 @@ Just out of curiosity, get to know me!
 
 FOLLOW ME ON:
 
-
-![likedin.png](https://www.linkedin.com/in/sonia-ruiz-perez/ 'LinkedIn Sonia Ruiz')
-![tableau.png](https://public.tableau.com/app/profile/solkiria 'Tableau Public Sonia Ruiz')
-![orcid.png](https://orcid.org/0000-0001-9872-0193 'ORCiD Sonia Ruiz')
+[![Alt text](linkedin.png)](https://www.linkedin.com/in/sonia-ruiz-perez/ 'LinkedIn Sonia Ruiz')
+[![Alt text](tableau.png)](https://public.tableau.com/app/profile/solkiria 'Tableau Public Sonia Ruiz')
+[![Alt text](orcid.png)](https://orcid.org/0000-0001-9872-0193 'ORCiD Sonia Ruiz')
 
 
 
