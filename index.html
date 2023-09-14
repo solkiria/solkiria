@@ -7,16 +7,16 @@
     <style>
         body {
             background-color: #000;
-            color: #e600e6; /* Morado eléctrico */
+            color: #FF00FF; /* Morado eléctrico */
             font-family: 'console', monospace;
             text-align: center;
             margin: 0;
             padding: 0;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
-            height: 100vh;
+            align-items: center;
         }
 
         h1 {
@@ -24,23 +24,38 @@
         }
 
         .button {
-            background-color: #e600e6; /* Morado eléctrico */
+            display: inline-block;
+            background-color: #FF00FF; /* Morado eléctrico */
             color: #fff;
-            border: none;
-            border-radius: 20px;
-            padding: 10px 20px;
-            margin: 5px;
             font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin: 10px;
             text-decoration: none;
+        }
+
+        .portfolio-buttons {
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
 <body>
     <h1>Sonia Ruiz Perez's Portfolio</h1>
-    <a class="button" href="https://www.linkedin.com/in/sonia-ruiz-perez/" target="_blank">LinkedIn</a>
-    <a class="button" href="https://github.com/solkiria" target="_blank">GitHub</a>
-    <a class="button" href="https://public.tableau.com/app/profile/solkiria" target="_blank">Tableau</a>
-    <a class="button" href="https://orcid.org/0000-0001-9872-0193" target="_blank">ORCiD</a>
-    <a class="button" href="data-projects.html">Data Projects</a>
+    <div class="portfolio-buttons">
+        <a class="button" href="https://www.linkedin.com/in/sonia-ruiz-perez/" target="_blank">LinkedIn</a>
+        <a class="button" href="https://github.com/solkiria" target="_blank">GitHub</a>
+        <a class="button" href="https://public.tableau.com/app/profile/solkiria" target="_blank">Tableau</a>
+        <a class="button" href="https://orcid.org/0000-0001-9872-0193" target="_blank">ORCiD</a>
+        <a class="button" href="#data-projects">Data Projects</a>
+    </div>
+
+    <!-- Data Projects Section -->
+    <div id="data-projects" style="display: none;">
+        <h2>Data Projects</h2>
+        <a class="button" href="https://github.com/solkiria/mosquito_personal_project" target="_blank">Mosquito Prediction Project</a>
+        <a class="button" href="#">Other Projects</a>
+        <a class="button" href="#">Back</a>
+    </div>
 </body>
 </html>
