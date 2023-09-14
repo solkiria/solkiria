@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: #000;
-            color: #8a2be2; /* Morado eléctrico */
+            color: #ff6aff; /* Morado eléctrico */
             font-family: "console", monospace;
             text-align: center;
             margin: 0;
@@ -24,15 +24,57 @@
         }
 
         .button {
-            margin-top: 20px;
+            background-color: #ff6aff; /* Morado eléctrico */
+            color: #fff;
+            border: none;
+            border-radius: 50px; /* Forma de cápsula */
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #cc00cc; /* Cambiar color al pasar el mouse */
+        }
+
+        .project-button {
+            background-color: #ff6aff; /* Morado eléctrico */
+            color: #fff;
+            border: none;
+            border-radius: 50px; /* Forma de cápsula */
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .project-button:hover {
+            background-color: #cc00cc; /* Cambiar color al pasar el mouse */
         }
     </style>
 </head>
 <body>
     <h1>Sonia Ruiz Perez's Portfolio</h1>
-    <a class="button" href="https://www.linkedin.com/in/sonia-ruiz-perez/">LinkedIn</a>
-    <a class="button" href="https://github.com/solkiria">GitHub</a>
-    <a class="button" href="https://public.tableau.com/app/profile/solkiria">Tableau</a>
-    <a class="button" href="https://orcid.org/0000-0001-9872-0193">ORCiD</a>
+    <a href="https://www.linkedin.com/in/sonia-ruiz-perez/" class="button">LinkedIn</a>
+    <a href="https://github.com/solkiria" class="button">GitHub</a>
+    <a href="https://public.tableau.com/app/profile/solkiria" class="button">Tableau</a>
+    <a href="https://orcid.org/0000-0001-9872-0193" class="button">ORCiD</a>
+    <button class="project-button" onclick="showProjects()">Data Projects</button>
+
+    <div id="project-section" style="display: none;">
+        <button class="project-button" onclick="openProject()">Mosquito Prediction Project</button>
+    </div>
+
+    <script>
+        function showProjects() {
+            var projectSection = document.getElementById("project-section");
+            projectSection.style.display = "block";
+        }
+
+        function openProject() {
+            // Aquí puedes definir lo que sucede cuando se hace clic en el proyecto.
+            // Puedes redirigir a una página específica o mostrar más información.
+            alert("Aquí puedes abrir el Mosquito Prediction Project.");
+        }
+    </script>
 </body>
 </html>
