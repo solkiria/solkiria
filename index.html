@@ -44,7 +44,7 @@
             visibility: visible;
         }
 
-        #projects-button {
+        .hidden-button {
             opacity: 0;
             visibility: hidden;
         }
@@ -58,6 +58,9 @@
         <a href="https://public.tableau.com/app/profile/solkiria" class="button" id="tableau-button" target="_blank">Tableau</a>
         <a href="https://orcid.org/0000-0001-9872-0193" class="button" id="orcid-button" target="_blank">ORCiD</a>
         <button class="button" id="data-projects-button">Data Projects</button>
+        <button class="button hidden-button" id="mosquito-button" onclick="window.location.href='https://github.com/solkiria/mosquito_personal_project'" style="transition: opacity 1s, visibility 1s;">Mosquito Prediction Project</button>
+        <button class="button hidden-button" id="other-projects-button" style="transition: opacity 1s, visibility 1s;">Other projects</button>
+        <button class="button hidden-button" id="back-button" onclick="showInitialButtons()" style="transition: opacity 1s, visibility 1s;">Back</button>
     </div>
 
     <script>
@@ -66,42 +69,83 @@
         const githubButton = document.getElementById('github-button');
         const tableauButton = document.getElementById('tableau-button');
         const orcidButton = document.getElementById('orcid-button');
+        const mosquitoButton = document.getElementById('mosquito-button');
+        const otherProjectsButton = document.getElementById('other-projects-button');
+        const backButton = document.getElementById('back-button');
         const buttonContainer = document.getElementById('button-container');
-        const projectsButton = document.getElementById('projects-button');
 
-        dataProjectsButton.addEventListener('click', () => {
+        function showDataProjects() {
+            linkedinButton.style.opacity = 1;
+            githubButton.style.opacity = 1;
+            tableauButton.style.opacity = 1;
+            orcidButton.style.opacity = 1;
+            mosquitoButton.style.opacity = 0;
+            otherProjectsButton.style.opacity = 0;
+            backButton.style.opacity = 0;
+
+            setTimeout(() => {
+                mosquitoButton.style.visibility = 'hidden';
+                otherProjectsButton.style.visibility = 'hidden';
+                backButton.style.visibility = 'hidden';
+
+                dataProjectsButton.style.opacity = 1;
+                dataProjectsButton.style.visibility = 'visible';
+            }, 2000);
+        }
+
+        function showProjectButtons() {
             linkedinButton.style.opacity = 0;
             githubButton.style.opacity = 0;
             tableauButton.style.opacity = 0;
             orcidButton.style.opacity = 0;
+            dataProjectsButton.style.opacity = 0;
 
             setTimeout(() => {
                 linkedinButton.style.visibility = 'hidden';
                 githubButton.style.visibility = 'hidden';
                 tableauButton.style.visibility = 'hidden';
                 orcidButton.style.visibility = 'hidden';
+                dataProjectsButton.style.visibility = 'hidden';
 
-                projectsButton.style.opacity = 1;
-                projectsButton.style.visibility = 'visible';
+                mosquitoButton.style.opacity = 1;
+                otherProjectsButton.style.opacity = 1;
+                backButton.style.opacity = 1;
+
+                mosquitoButton.style.visibility = 'visible';
+                otherProjectsButton.style.visibility = 'visible';
+                backButton.style.visibility = 'visible';
             }, 2000);
-        });
+        }
 
-        projectsButton.addEventListener('click', () => {
-            linkedinButton.style.opacity = 1;
-            githubButton.style.opacity = 1;
-            tableauButton.style.opacity = 1;
-            orcidButton.style.opacity = 1;
+        function showInitialButtons() {
+            mosquitoButton.style.opacity = 0;
+            otherProjectsButton.style.opacity = 0;
+            backButton.style.opacity = 0;
 
             setTimeout(() => {
+                mosquitoButton.style.visibility = 'hidden';
+                otherProjectsButton.style.visibility = 'hidden';
+                backButton.style.visibility = 'hidden';
+
+                linkedinButton.style.opacity = 1;
+                githubButton.style.opacity = 1;
+                tableauButton.style.opacity = 1;
+                orcidButton.style.opacity = 1;
+                dataProjectsButton.style.opacity = 1;
+
                 linkedinButton.style.visibility = 'visible';
                 githubButton.style.visibility = 'visible';
                 tableauButton.style.visibility = 'visible';
                 orcidButton.style.visibility = 'visible';
-
-                projectsButton.style.opacity = 0;
-                projectsButton.style.visibility = 'hidden';
+                dataProjectsButton.style.visibility = 'visible';
             }, 1000);
-        });
+        }
+
+        dataProjectsButton.addEventListener('click', showProjectButtons);
+        backButton.addEventListener('click', showInitialButtons);
+
+        // Llama a showInitialButtons() al cargar la página para mostrar los botones iniciales
+        window.onload = showInitialButtons;
     </script>
 </body>
 </html>
