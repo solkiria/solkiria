@@ -8,22 +8,22 @@
         body {
             background-color: #000;
             color: #B78BFF;
-            font-family: 'console', monospace;
+            font-family: "console", monospace;
             text-align: center;
             margin: 0;
             padding: 0;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
 
         h1 {
             font-size: 36px;
         }
 
-        .buttons {
+        .button-container {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -36,58 +36,72 @@
             padding: 10px 20px;
             border-radius: 50px;
             cursor: pointer;
-            transition: opacity 2s;
+            transition: opacity 2s, visibility 2s;
         }
 
-        .hidden {
+        #data-projects-button {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #projects-button {
             opacity: 0;
-            pointer-events: none;
+            visibility: hidden;
         }
     </style>
 </head>
 <body>
     <h1>Sonia Ruiz Perez's Portfolio</h1>
-    <div class="buttons">
-        <a href="https://www.linkedin.com/in/sonia-ruiz-perez/" class="button" target="_blank">LinkedIn</a>
-        <a href="https://github.com/solkiria" class="button" target="_blank">GitHub</a>
-        <a href="https://public.tableau.com/app/profile/solkiria" class="button" target="_blank">Tableau</a>
-        <a href="https://orcid.org/0000-0001-9872-0193" class="button" target="_blank">ORCiD</a>
-        <button class="button" id="dataProjects">Data Projects</button>
-    </div>
-
-    <div id="projectButtons" class="hidden">
-        <a href="https://github.com/solkiria/mosquito_personal_project" class="button" target="_blank">Mosquito Prediction Project</a>
-        <button class="button" id="otherProjects">Other Projects</button>
-        <button class="button" id="back">Back</button>
+    <div class="button-container" id="button-container">
+        <a href="https://www.linkedin.com/in/sonia-ruiz-perez/" class="button" id="linkedin-button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/solkiria" class="button" id="github-button" target="_blank">GitHub</a>
+        <a href="https://public.tableau.com/app/profile/solkiria" class="button" id="tableau-button" target="_blank">Tableau</a>
+        <a href="https://orcid.org/0000-0001-9872-0193" class="button" id="orcid-button" target="_blank">ORCiD</a>
+        <button class="button" id="data-projects-button">Data Projects</button>
     </div>
 
     <script>
-        const dataProjectsButton = document.getElementById("dataProjects");
-        const projectButtons = document.getElementById("projectButtons");
-        const otherProjectsButton = document.getElementById("otherProjects");
-        const backButton = document.getElementById("back");
+        const dataProjectsButton = document.getElementById('data-projects-button');
+        const linkedinButton = document.getElementById('linkedin-button');
+        const githubButton = document.getElementById('github-button');
+        const tableauButton = document.getElementById('tableau-button');
+        const orcidButton = document.getElementById('orcid-button');
+        const buttonContainer = document.getElementById('button-container');
+        const projectsButton = document.getElementById('projects-button');
 
-        dataProjectsButton.addEventListener("click", () => {
-            dataProjectsButton.style.opacity = "0";
+        dataProjectsButton.addEventListener('click', () => {
+            linkedinButton.style.opacity = 0;
+            githubButton.style.opacity = 0;
+            tableauButton.style.opacity = 0;
+            orcidButton.style.opacity = 0;
+
             setTimeout(() => {
-                dataProjectsButton.style.display = "none";
-                projectButtons.style.opacity = "1";
-                projectButtons.style.pointerEvents = "auto";
+                linkedinButton.style.visibility = 'hidden';
+                githubButton.style.visibility = 'hidden';
+                tableauButton.style.visibility = 'hidden';
+                orcidButton.style.visibility = 'hidden';
+
+                projectsButton.style.opacity = 1;
+                projectsButton.style.visibility = 'visible';
             }, 2000);
         });
 
-        backButton.addEventListener("click", () => {
-            projectButtons.style.opacity = "0";
-            projectButtons.style.pointerEvents = "none";
-            setTimeout(() => {
-                dataProjectsButton.style.display = "block";
-                dataProjectsButton.style.opacity = "1";
-            }, 2000);
-        });
+        projectsButton.addEventListener('click', () => {
+            linkedinButton.style.opacity = 1;
+            githubButton.style.opacity = 1;
+            tableauButton.style.opacity = 1;
+            orcidButton.style.opacity = 1;
 
-        otherProjectsButton.addEventListener("click", () => {
-            // Add functionality to navigate to other projects
+            setTimeout(() => {
+                linkedinButton.style.visibility = 'visible';
+                githubButton.style.visibility = 'visible';
+                tableauButton.style.visibility = 'visible';
+                orcidButton.style.visibility = 'visible';
+
+                projectsButton.style.opacity = 0;
+                projectsButton.style.visibility = 'hidden';
+            }, 1000);
         });
-        </script>
-    </body>
+    </script>
+</body>
 </html>
