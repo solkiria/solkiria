@@ -12,19 +12,18 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
         }
 
         h1 {
             font-size: 36px;
         }
 
-        .button-container {
-            margin-top: 20px;
+        .buttons {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -35,41 +34,60 @@
             color: #fff;
             font-weight: bold;
             padding: 10px 20px;
-            border-radius: 20px;
+            border-radius: 50px;
             cursor: pointer;
+            transition: opacity 2s;
         }
 
-        .transition {
+        .hidden {
             opacity: 0;
-            transition: opacity 2s;
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
     <h1>Sonia Ruiz Perez's Portfolio</h1>
-    <div class="button-container">
+    <div class="buttons">
         <a href="https://www.linkedin.com/in/sonia-ruiz-perez/" class="button" target="_blank">LinkedIn</a>
         <a href="https://github.com/solkiria" class="button" target="_blank">GitHub</a>
         <a href="https://public.tableau.com/app/profile/solkiria" class="button" target="_blank">Tableau</a>
         <a href="https://orcid.org/0000-0001-9872-0193" class="button" target="_blank">ORCiD</a>
-        <button id="data-projects-button" class="button">Data Projects</button>
+        <button class="button" id="dataProjects">Data Projects</button>
+    </div>
+
+    <div id="projectButtons" class="hidden">
+        <a href="https://github.com/solkiria/mosquito_personal_project" class="button" target="_blank">Mosquito Prediction Project</a>
+        <button class="button" id="otherProjects">Other Projects</button>
+        <button class="button" id="back">Back</button>
     </div>
 
     <script>
-        const dataProjectsButton = document.getElementById('data-projects-button');
-        const buttonContainer = document.querySelector('.button-container');
+        const dataProjectsButton = document.getElementById("dataProjects");
+        const projectButtons = document.getElementById("projectButtons");
+        const otherProjectsButton = document.getElementById("otherProjects");
+        const backButton = document.getElementById("back");
 
-        dataProjectsButton.addEventListener('click', () => {
-            buttonContainer.classList.add('transition');
-
+        dataProjectsButton.addEventListener("click", () => {
+            dataProjectsButton.style.opacity = "0";
             setTimeout(() => {
-                buttonContainer.innerHTML = `
-                    <button class="button" onclick="window.location.href='https://github.com/solkiria/mosquito_personal_project'">Mosquito Prediction Project</button>
-                    <button class="button">Other projects</button>
-                    <button class="button" onclick="window.location.href='index.html'">Back</button>
-                `;
+                dataProjectsButton.style.display = "none";
+                projectButtons.style.opacity = "1";
+                projectButtons.style.pointerEvents = "auto";
             }, 2000);
         });
-    </script>
-</body>
+
+        backButton.addEventListener("click", () => {
+            projectButtons.style.opacity = "0";
+            projectButtons.style.pointerEvents = "none";
+            setTimeout(() => {
+                dataProjectsButton.style.display = "block";
+                dataProjectsButton.style.opacity = "1";
+            }, 2000);
+        });
+
+        otherProjectsButton.addEventListener("click", () => {
+            // Add functionality to navigate to other projects
+        });
+        </script>
+    </body>
 </html>
