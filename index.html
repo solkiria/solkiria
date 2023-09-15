@@ -7,65 +7,68 @@
     <style>
         body {
             background-color: #000;
-            color: #9C1AFF; /* Morado eléctrico */
+            color: #B78BFF;
             font-family: 'console', monospace;
             text-align: center;
             margin: 0;
             padding: 0;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 36px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .button {
-            background-color: #9C1AFF;
+            background-color: #B78BFF;
             color: #fff;
             font-weight: bold;
-            border: none;
-            border-radius: 50px;
             padding: 10px 20px;
-            margin: 10px;
+            border-radius: 20px;
             cursor: pointer;
         }
 
-        #data-projects {
-            display: none;
+        .transition {
+            opacity: 0;
+            transition: opacity 2s;
         }
     </style>
 </head>
 <body>
     <h1>Sonia Ruiz Perez's Portfolio</h1>
-    <a href="https://www.linkedin.com/in/sonia-ruiz-perez/" class="button">LinkedIn</a>
-    <a href="https://github.com/solkiria" class="button">GitHub</a>
-    <a href="https://public.tableau.com/app/profile/solkiria" class="button">Tableau</a>
-    <a href="https://orcid.org/0000-0001-9872-0193" class="button">ORCiD</a>
-    <a href="#" class="button" id="data-projects-button">Data Projects</a>
-
-    <div id="data-projects">
-        <a href="https://github.com/solkiria/mosquito_personal_project" class="button">Mosquito Prediction Project</a>
-        <a href="#" class="button">Other Projects</a>
-        <a href="#" class="button" id="back-button">Back</a>
+    <div class="button-container">
+        <a href="https://www.linkedin.com/in/sonia-ruiz-perez/" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/solkiria" class="button" target="_blank">GitHub</a>
+        <a href="https://public.tableau.com/app/profile/solkiria" class="button" target="_blank">Tableau</a>
+        <a href="https://orcid.org/0000-0001-9872-0193" class="button" target="_blank">ORCiD</a>
+        <button id="data-projects-button" class="button">Data Projects</button>
     </div>
 
     <script>
-        const dataProjectsButton = document.getElementById("data-projects-button");
-        const dataProjectsDiv = document.getElementById("data-projects");
-        const backButton = document.getElementById("back-button");
+        const dataProjectsButton = document.getElementById('data-projects-button');
+        const buttonContainer = document.querySelector('.button-container');
 
-        dataProjectsButton.addEventListener("click", () => {
-            dataProjectsDiv.style.display = "block";
-            dataProjectsButton.style.display = "none";
-        });
+        dataProjectsButton.addEventListener('click', () => {
+            buttonContainer.classList.add('transition');
 
-        backButton.addEventListener("click", () => {
-            dataProjectsDiv.style.display = "none";
-            dataProjectsButton.style.display = "block";
+            setTimeout(() => {
+                buttonContainer.innerHTML = `
+                    <button class="button" onclick="window.location.href='https://github.com/solkiria/mosquito_personal_project'">Mosquito Prediction Project</button>
+                    <button class="button">Other projects</button>
+                    <button class="button" onclick="window.location.href='index.html'">Back</button>
+                `;
+            }, 2000);
         });
     </script>
 </body>
