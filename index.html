@@ -49,21 +49,18 @@
             text-decoration: none;
         }
 
+        .button:hover {
+            text-decoration: none;
+        }
+
+        #data-projects-button {
+            opacity: 1;
+            visibility: visible;
+        }
+
         .hidden-button {
             opacity: 0;
             visibility: hidden;
-        }
-
-        .visit-counter {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background-color: black;
-            color: #00ff00;
-            font-family: "console", monospace;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
         }
     </style>
 </head>
@@ -81,7 +78,6 @@
         <button class="button hidden-button" id="other-projects-button" style="transition: opacity 1s, visibility 1s;">[ Other projects ]</button>
         <button class="button hidden-button" id="back-button" onclick="showInitialButtons()" style="transition: opacity 1s, visibility 1s;">< Back ></button>
     </div>
-    <div class="visit-counter" id="visit-counter">000000001</div>
 
     <script>
         const dataProjectsButton = document.getElementById('data-projects-button');
@@ -93,7 +89,6 @@
         const otherProjectsButton = document.getElementById('other-projects-button');
         const backButton = document.getElementById('back-button');
         const buttonContainer = document.getElementById('button-container');
-        const visitCounter = document.getElementById('visit-counter');
 
         function showDataProjects() {
             linkedinButton.style.opacity = 0;
@@ -145,8 +140,6 @@
         }
 
         function showInitialButtons() {
-            visitCounter.innerText = pad(parseInt(visitCounter.innerText) + 1, 9); // Incrementa el contador
-
             mosquitoButton.style.opacity = 0;
             otherProjectsButton.style.opacity = 0;
             backButton.style.opacity = 0;
@@ -175,11 +168,6 @@
 
         // Llama a showInitialButtons() al cargar la página para mostrar los botones iniciales
         window.onload = showInitialButtons;
-
-        // Función para rellenar con ceros a la izquierda
-        function pad(num, size) {
-            return num.toString().padStart(size, '0');
-        }
     </script>
 </body>
 </html>
