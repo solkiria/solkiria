@@ -9,33 +9,34 @@
             background-image: url('background_web.png');
             background-repeat: no-repeat;
             background-size: cover;
-            color: #fff;
             font-family: "console", monospace;
-            text-align: center;
             margin: 0;
             padding: 0;
-            height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
         }
 
-        .container {
+        .title-box {
             background-color: #b1a7c9;
-            padding: 20px;
+            color: #fff;
+            font-weight: bold;
             border-radius: 50px;
-            margin-bottom: 20px;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 20px;
         }
 
         h1 {
             font-size: 36px;
+            margin: 0;
         }
 
         .button-container {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            margin-top: 20px;
         }
 
         .button {
@@ -49,25 +50,35 @@
             text-decoration: none;
         }
 
+        .button:hover {
+            text-decoration: none;
+        }
+
+        #data-projects-button {
+            opacity: 1;
+            visibility: visible;
+        }
+
         .hidden-button {
             opacity: 0;
             visibility: hidden;
         }
 
-        .visit-counter {
+        #visit-counter {
             position: fixed;
             bottom: 10px;
             right: 10px;
-            background-color: black;
-            color: #00ff00;
+            background-color: #000;
+            color: #00FF00;
             font-family: "console", monospace;
             padding: 5px 10px;
             border-radius: 5px;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="title-box">
         <h1>Sonia Ruiz Perez's Portfolio</h1>
     </div>
     <div class="button-container" id="button-container">
@@ -75,12 +86,13 @@
         <a href="https://github.com/solkiria" class="button" id="github-button" target="_blank">GitHub</a>
         <a href="https://public.tableau.com/app/profile/solkiria" class="button" id="tableau-button" target="_blank">Tableau</a>
         <a href="https://orcid.org/0000-0001-9872-0193" class="button" id="orcid-button" target="_blank">ORCiD</a>
-        <button class="button" id="data-projects-button">{ Data Projects }</button>
-        <button class="button hidden-button" id="mosquito-button" onclick="window.location.href='https://github.com/solkiria/mosquito_personal_project'" style="transition: opacity 1s, visibility 1s;">[ Mosquito Prediction Project ]</button>
-        <button class="button hidden-button" id="other-projects-button" style="transition: opacity 1s, visibility 1s;">[ Other projects ]</button>
-        <button class="button hidden-button" id="back-button" onclick="showInitialButtons()" style="transition: opacity 1s, visibility 1s;">< Back ></button>
+        <a class="button" id="data-projects-button" onclick="showProjectButtons()">Data Projects</a>
+        <a class="button hidden-button" id="mosquito-button" href="https://github.com/solkiria/mosquito_personal_project" target="_blank">[ Mosquito Prediction Project ]</a>
+        <a class="button hidden-button" id="other-projects-button">[ Other projects ]</a>
+        <a class="button hidden-button" id="back-button" onclick="showInitialButtons()">[ Back ]</a>
     </div>
-    <div class="visit-counter" id="visit-counter">000000001</div>
+
+    <div id="visit-counter">Visitas: <span id="counter">000000001</span></div>
 
     <script>
         const dataProjectsButton = document.getElementById('data-projects-button');
@@ -92,7 +104,7 @@
         const otherProjectsButton = document.getElementById('other-projects-button');
         const backButton = document.getElementById('back-button');
         const buttonContainer = document.getElementById('button-container');
-        const visitCounter = document.getElementById('visit-counter');
+        const counter = document.getElementById('counter');
 
         function showDataProjects() {
             linkedinButton.style.opacity = 0;
@@ -110,11 +122,10 @@
                 dataProjectsButton.style.visibility = 'hidden';
 
                 mosquitoButton.style.opacity = 1;
-                otherProjectsButton.style.opacity = 1;
-                backButton.style.opacity = 1;
-
                 mosquitoButton.style.visibility = 'visible';
+                otherProjectsButton.style.opacity = 1;
                 otherProjectsButton.style.visibility = 'visible';
+                backButton.style.opacity = 1;
                 backButton.style.visibility = 'visible';
             }, 2000);
         }
@@ -130,55 +141,27 @@
                 backButton.style.visibility = 'hidden';
 
                 linkedinButton.style.opacity = 1;
-                githubButton.style.opacity = 1;
-                tableauButton.style.opacity = 1;
-                orcidButton.style.opacity = 1;
-                dataProjectsButton.style.opacity = 1;
-
                 linkedinButton.style.visibility = 'visible';
-                githubButton.style.visibility = 'visible';
-                tableauButton.style.visibility = 'visible';
-                orcidButton.style.visibility = 'visible';
-                dataProjectsButton.style.visibility = 'visible';
-            }, 1000);
-        }
-
-        function showInitialButtons() {
-            visitCounter.innerText = pad(parseInt(visitCounter.innerText) + 1, 9); // Incrementa el contador
-
-            mosquitoButton.style.opacity = 0;
-            otherProjectsButton.style.opacity = 0;
-            backButton.style.opacity = 0;
-
-            setTimeout(() => {
-                mosquitoButton.style.visibility = 'hidden';
-                otherProjectsButton.style.visibility = 'hidden';
-                backButton.style.visibility = 'hidden';
-
-                linkedinButton.style.opacity = 1;
                 githubButton.style.opacity = 1;
-                tableauButton.style.opacity = 1;
-                orcidButton.style.opacity = 1;
-                dataProjectsButton.style.opacity = 1;
-
-                linkedinButton.style.visibility = 'visible';
                 githubButton.style.visibility = 'visible';
+                tableauButton.style.opacity = 1;
                 tableauButton.style.visibility = 'visible';
+                orcidButton.style.opacity = 1;
                 orcidButton.style.visibility = 'visible';
+
+                dataProjectsButton.style.opacity = 1;
                 dataProjectsButton.style.visibility = 'visible';
             }, 1000);
         }
 
         dataProjectsButton.addEventListener('click', showDataProjects);
-        backButton.addEventListener('click', showInitialButtons);
+        backButton.addEventListener('click', showProjectButtons);
 
-        // Llama a showInitialButtons() al cargar la página para mostrar los botones iniciales
-        window.onload = showInitialButtons;
-
-        // Función para rellenar con ceros a la izquierda
-        function pad(num, size) {
-            return num.toString().padStart(size, '0');
-        }
+        // Contador de visitas
+        let visitCount = parseInt(localStorage.getItem('visitCount')) || 0;
+        visitCount++;
+        localStorage.setItem('visitCount', visitCount);
+        counter.textContent = visitCount.toString().padStart(9, '0');
     </script>
 </body>
 </html>
