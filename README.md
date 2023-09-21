@@ -10,7 +10,8 @@ Just out of curiosity, get to know me!
 - 🚀 I'm always looking for a challenge to overcome 🧗‍♀️
 - 🤝 I would love to collaborate on any interesting proyect that comes around 🗺️
 - 👩‍🔬 I used to work in labs environment dealing with science data about DNA and population dinamics 🧬
-- 📬 Find me: sonia.ruiz.p31@gmail.com         https://solkiria.github.io/solkiria/
+- 📬 Find me: sonia.ruiz.p31@gmail.com
+- &#9000; Check out my website! https://solkiria.github.io/solkiria/
 - 🗨️ Ask me about Data analysis, Python, SQL, data visualization with Tableau or Power BI...
 - 💜✨ I'm passionate about nature, sports (specially climbing, canyoning and rafting).
 
