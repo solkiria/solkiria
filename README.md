@@ -9,7 +9,7 @@ Just out of curiosity, get to know me!
 - 🌱 I'm currently learning about Apache Spark 📊 and working on my personal project about mosquito dispersal 🌡️ 🦟🌍  
 - 🚀 I'm always looking for a challenge to overcome 🧗‍♀️
 - 🤝 I would love to collaborate on any interesting proyect that comes around 🗺️
-- 👩‍🔬 I used to work in labs environment dealing with science data about DNA and population dinamics 🧬
+- 👩‍🔬 I used to work as a researcher in labs environment dealing with science data about patients sensitive data, DNA and population dinamics 🧬
 - 📬 Find me: sonia.ruiz.p31@gmail.com
 - &#9000; Check out my website! https://solkiria.github.io/solkiria/
 - 🗨️ Ask me about Data analysis, Python, SQL, data visualization with Tableau or Power BI...
