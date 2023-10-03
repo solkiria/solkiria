@@ -45,7 +45,7 @@
             padding: 10px 20px;
             border-radius: 50px;
             cursor: pointer;
-            transition: opacity 1s, visibility 1s;
+            transition: opacity 2s, visibility 2s;
             text-decoration: none;
         }
 
@@ -75,9 +75,9 @@
         <a href="https://orcid.org/0000-0001-9872-0193" class="button" id="orcid-button" target="_blank">ORCiD</a>
         <button class="button" id="data-projects-button">{ Data Projects }</button>
         <button class="button hidden-button" id="mosquito-button" onclick="window.location.href='https://github.com/solkiria/mosquito_personal_project'" style="transition: opacity 1s, visibility 1s;">[ Mosquito Prediction Project ]</button>
-        <button class="button hidden-button" id="data-base-button" style="transition: opacity 1s, visibility 1s;">[ Data Base Creation ]</button>
-        <button class="button hidden-button" id="data-wrangling-button" style="transition: opacity 1s, visibility 1s;">[ Data Wrangling EDA ETL Visualization ]</button>
-        <button class="button hidden-button" id="ml-models-button" style="transition: opacity 1s, visibility 1s;">[ Machine Learning Prediction Models ]</button>
+        <button class="button hidden-button" id="data-base-button" onclick="window.location.href='#'" style="transition: opacity 1s, visibility 1s;">[ Data Base Creation ]</button>
+        <button class="button hidden-button" id="data-wrangling-button" onclick="window.location.href='#'" style="transition: opacity 1s, visibility 1s;">[ Data Wrangling EDA ETL Visualization ]</button>
+        <button class="button hidden-button" id="ml-prediction-button" onclick="window.location.href='#'" style="transition: opacity 1s, visibility 1s;">[ Machine Learning Prediction Models ]</button>
         <button class="button hidden-button" id="other-projects-button" style="transition: opacity 1s, visibility 1s;">[ Other projects ]</button>
         <button class="button hidden-button" id="back-button" onclick="showInitialButtons()" style="transition: opacity 1s, visibility 1s;">< Back ></button>
     </div>
@@ -91,7 +91,7 @@
         const mosquitoButton = document.getElementById('mosquito-button');
         const dataBaseButton = document.getElementById('data-base-button');
         const dataWranglingButton = document.getElementById('data-wrangling-button');
-        const mlModelsButton = document.getElementById('ml-models-button');
+        const mlPredictionButton = document.getElementById('ml-prediction-button');
         const otherProjectsButton = document.getElementById('other-projects-button');
         const backButton = document.getElementById('back-button');
         const buttonContainer = document.getElementById('button-container');
@@ -114,14 +114,14 @@
                 mosquitoButton.style.opacity = 1;
                 dataBaseButton.style.opacity = 1;
                 dataWranglingButton.style.opacity = 1;
-                mlModelsButton.style.opacity = 1;
+                mlPredictionButton.style.opacity = 1;
                 otherProjectsButton.style.opacity = 1;
                 backButton.style.opacity = 1;
 
                 mosquitoButton.style.visibility = 'visible';
                 dataBaseButton.style.visibility = 'visible';
                 dataWranglingButton.style.visibility = 'visible';
-                mlModelsButton.style.visibility = 'visible';
+                mlPredictionButton.style.visibility = 'visible';
                 otherProjectsButton.style.visibility = 'visible';
                 backButton.style.visibility = 'visible';
             }, 2000);
@@ -131,7 +131,7 @@
             mosquitoButton.style.opacity = 0;
             dataBaseButton.style.opacity = 0;
             dataWranglingButton.style.opacity = 0;
-            mlModelsButton.style.opacity = 0;
+            mlPredictionButton.style.opacity = 0;
             otherProjectsButton.style.opacity = 0;
             backButton.style.opacity = 0;
 
@@ -139,7 +139,7 @@
                 mosquitoButton.style.visibility = 'hidden';
                 dataBaseButton.style.visibility = 'hidden';
                 dataWranglingButton.style.visibility = 'hidden';
-                mlModelsButton.style.visibility = 'hidden';
+                mlPredictionButton.style.visibility = 'hidden';
                 otherProjectsButton.style.visibility = 'hidden';
                 backButton.style.visibility = 'hidden';
 
@@ -161,7 +161,7 @@
             mosquitoButton.style.opacity = 0;
             dataBaseButton.style.opacity = 0;
             dataWranglingButton.style.opacity = 0;
-            mlModelsButton.style.opacity = 0;
+            mlPredictionButton.style.opacity = 0;
             otherProjectsButton.style.opacity = 0;
             backButton.style.opacity = 0;
 
@@ -169,7 +169,7 @@
                 mosquitoButton.style.visibility = 'hidden';
                 dataBaseButton.style.visibility = 'hidden';
                 dataWranglingButton.style.visibility = 'hidden';
-                mlModelsButton.style.visibility = 'hidden';
+                mlPredictionButton.style.visibility = 'hidden';
                 otherProjectsButton.style.visibility = 'hidden';
                 backButton.style.visibility = 'hidden';
 
