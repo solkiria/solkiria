@@ -15,7 +15,7 @@ Just out of curiosity, get to know me!
 - 🗨️ Ask me about Data analysis, Python, SQL, data visualization with Tableau or Power BI...
 - 💜✨ I'm passionate about nature, sports (specially climbing, canyoning and rafting).
 
-**FOLLOW ME ON:**
+**FOLLOW ME ON :**
 
 [![Alt text](linkedin.png)](https://www.linkedin.com/in/sonia-ruiz-perez/ 'LinkedIn Sonia Ruiz')
 [![Alt text](tableau.png)](https://public.tableau.com/app/profile/solkiria 'Tableau Public Sonia Ruiz')
