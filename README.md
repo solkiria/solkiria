@@ -6,7 +6,7 @@
 Just out of curiosity, get to know me!
 
 - 🕵️‍♀️ I'm working on my Data Analyst and Data Scientist skills 👩‍💻
-- 🌱 I'm currently learning about Apache Spark and T-SQL 📊 and working on my personal project about mosquito dispersal 🌡️ 🦟🌍  
+- 🌱 I'm currently learning about Apache Spark, T-SQL and Qlik 📊 and working on my personal project about mosquito dispersal 🌡️ 🦟🌍  
 - 🚀 I'm always looking for a challenge to overcome 🧗‍♀️
 - 🤝 I would love to collaborate on any interesting proyect that comes around 🗺️
 - 👩‍🔬 I used to work as a researcher in labs environment dealing with science data about patients sensitive data, DNA and population dinamics 🧬
