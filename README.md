@@ -12,7 +12,7 @@ Just out of curiosity, get to know me!
 - 👩‍🔬 I used to work as a researcher in labs environment dealing with science data about patients sensitive data, DNA and population dinamics 🧬
 - 📬 Find me: sonia.ruiz.p31@gmail.com
 - &#9000; Check out my website! https://solkiria.github.io/solkiria/
-- 🗨️ Ask me about Data analysis, Python, SQL, data visualization with Tableau or Power BI...
+- 🗨️ Ask me about Data Science and Business Intelligence using Python, SQL, Tableau, Qlik, Power BI...
 - 💜✨ I'm passionate about nature, sports (specially climbing, canyoning and rafting).
 
 **FOLLOW ME ON :**
